@@ -1,0 +1,69 @@
+{
+  "posts": [
+    {
+      "name": "Sagar D R",
+      "avatar": "avatar-2",
+      "gender": "male",
+      "department": [
+        "Finance"
+      ],
+      "salary": "2,50,000",
+      "startDate": "2023-11-23",
+      "note": "",
+      "id": 1
+    },
+    {
+      "name": "Sagar D R",
+      "avatar": "avatar-3",
+      "gender": "male",
+      "department": [
+        "Finance"
+      ],
+      "salary": "2,50,000",
+      "startDate": "2023-11-23",
+      "note": "",
+      "id": 4
+    },
+    {
+      "name": "Sagar D R",
+      "avatar": "avatar-4",
+      "gender": "male",
+      "department": [
+        "Finance"
+      ],
+      "salary": "2,50,000",
+      "startDate": "2023-11-23",
+      "note": "",
+      "id": 5
+    },
+    {
+      "name": "Suman D ddd",
+      "avatar": "avatar-1",
+      "gender": "male",
+      "department": [
+        "HR"
+      ],
+      "salary": "2,00,000",
+      "startDate": "2023-11-01",
+      "note": "jpkd",
+      "id": 6
+    },
+    {
+      "name": "sagar",
+      "avatar": "avatar-4",
+      "gender": "male",
+      "department": [
+        "Finance",
+        "Engineer"
+      ],
+      "salary": "3,00,000",
+      "startDate": "2023-11-02",
+      "note": "ggod",
+      "id": 7
+    }
+  ],
+  "comments": [],
+  "profile": {
+    "name": "typicode"
+  }
+}

@@ -1,0 +1,224 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header {
+  display: flex;
+  height: 10%;
+  width: 100%;
+  background-color: antiquewhite;
+  padding: 5px;
+  justify-content: center;
+  align-items: center;
+}
+
+header img {
+  height: 30px;
+  margin-right: 50px;
+}
+
+header h1 {
+  color: rgb(39, 160, 220);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 80%;
+}
+
+.form-page {
+  background-color: rgb(255, 255, 255);
+  border-radius: 5px;
+  height: 90%;
+  width: 60%;
+  box-shadow: 0 0 4px rgba(117, 110, 110, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.department-list label {
+  margin-left: 1%;
+  margin-right: 3%;
+}
+
+.form-page h3 {
+  height: 10%;
+  width: 80%;
+  margin-top: 5%;
+  color: #727272;
+}
+.form-layout {
+  height: 90%;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+.form-group {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+.input-form {
+  width: 70%;
+  flex-wrap: wrap;
+  display: flex;
+}
+.label-from {
+  width: 30%;
+  font-weight: bold;
+}
+.button-both {
+  display: flex;
+  width: 70%;
+  gap: 10px;
+  justify-content: end;
+}
+.form-group img {
+  height: 30px;
+  margin: 0 20px 0 5px;
+}
+
+.gender label {
+  margin: 0 15px 0 1px;
+}
+.department-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.profile-image {
+  display: flex;
+  align-items: center;
+}
+#name,
+#note {
+  height: 30px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+  font-family: cursive;
+  width: 100%;
+  padding: 0 10px;
+}
+#note {
+  height: 60px;
+  resize: vertical;
+}
+#date,
+#salary {
+  height: 30px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+  padding: 3px 8px;
+  font-family: cursive;
+  width: 30%;
+}
+button {
+  padding: 10px 20px;
+  border: 1px solid rgb(190, 190, 190);
+  border-radius: 3px;
+  font-weight: bold;
+}
+.button {
+  padding: 10px 20px;
+  border: 1px solid rgb(190, 190, 190);
+  border-radius: 3px;
+  font-weight: bold;
+  background-color: #efefef;
+}
+a {
+  text-decoration: none;
+  color: black;
+  font-size: 14px;
+}
+button:hover, .button:hover {
+  background-color: #ccc;
+}
+
+.data {
+  color: #1bb116;
+}
+.data svg {
+  width: 60px;
+  height: 60px;
+}
+.error-message {
+  color: red;
+  display: none;
+}
+
+
+@media only screen and (max-width: 600px) {
+  header {
+    height: 5%;
+  }
+  header img {
+    height: 20px;
+    margin-right: 10px;
+  }
+  header h1 {
+    font-size: 16px;
+  }
+  .form-container {
+    height: 90%;
+  }
+  .form-page {
+    height: 80%;
+    width: 90%;
+  }
+  .form-page h3 {
+    height: 5%;
+    width: 90%;
+    font-size: small;
+  }
+  .form-layout {
+    height: 90%;
+    width: 90%;
+  }
+  .form-group {
+    font-size: smaller;
+  }
+  .form-layout {
+    justify-content: start;
+    gap: 25px;
+  }
+  button {
+    padding: 5px 15px;
+  }
+  .button {
+    padding: 5px 15px;
+  }
+  .form-group img {
+    height: 25px;
+    margin: 0 15px 0 5px;
+  }
+  .department-list label {
+    margin-right: 20px;
+  }
+  .department-list input{
+    margin-right: 5px;
+  }
+}
