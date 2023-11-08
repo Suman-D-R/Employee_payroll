@@ -13,12 +13,50 @@ $(document).ready(function () {
   $("#myForm").submit(function (e) {
     let isValid = true;
 
-    if ($.trim($("#name").val()) === "") {
-      $("#name-error").text("Name is required");
-      $("#name-error").show();
-      isValid = false;
-    } else {
-      $("#name-error").hide();
+  if ($.trim($("#name").val()) === "") {
+    $("#name-error").text("Name is required");
+    $("#name-error").show();
+    isValid = false;
+  } else {
+    $("#name-error").text(""); // Clear the name error message
+  }
+
+  if ($("input[name='avatar']:checked").length === 0) {
+    $("#profile-error").text("Profile image is required");
+    $("#profile-error").show();
+    isValid = false;
+  } else {
+    $("#profile-error").text(""); // Clear the profile image error message
+  }
+
+  if ($("input[name='gender']:checked").length === 0) {
+    $("#gender-error").text("Gender is required");
+    $("#gender-error").show();
+    isValid = false;
+  } else {
+    $("#gender-error").text(""); // Clear the gender error message
+  }
+
+  if ($.trim($("#salary").val()) === "") {
+    $("#salary-error").text("Salary is required");
+    $("#salary-error").show();
+    isValid = false;
+  } else {
+    $("#salary-error").text(""); // Clear the salary error message
+  }
+
+  if ($.trim($("#date").val()) === "") {
+    $("#date-error").text("Date is required");
+    $("#date-error").show();
+    isValid = false;
+  } else {
+    $("#date-error").text(""); // Clear the date error message
+  }
+  
+  if(!isValid) {
+    e.preventDefault();
+  }
+  else{
 
       const name = $("#name").val();
       const avatar = $("input[name='avatar']:checked").val();
@@ -58,9 +96,7 @@ $(document).ready(function () {
           console.log("Error message: " + error);
         },
       });
-    }
-    if (!isValid) {
-      e.preventDefault(); // Prevent form submission if any field is invalid
+     // Prevent form submission if any field is invalid
     }
   });
 

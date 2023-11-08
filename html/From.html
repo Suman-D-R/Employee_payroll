@@ -25,43 +25,27 @@
             <label class="label-from">Profile Image</label>
             <div class="input-form">
               <div class="profile-image">
-                <input
-                type="radio"
-                  id="avatar-1"
-                  value="avatar-1"
-                  name="avatar"
-                />
+                <input type="radio" id="avatar-1" value="avatar-1" name="avatar" />
                 <img src="../assets/avatar-1.jpg" />
               </div>
               <div class="profile-image">
-                <input
-                  type="radio"
-                  id="avatar-2"
-                  value="avatar-2"
-                  name="avatar"
-                />
+                <input type="radio" id="avatar-2" value="avatar-2" name="avatar" />
                 <img src="../assets/avatar-2.jpg" />
               </div>
               <div class="profile-image">
-                <input
-                  type="radio"
-                  id="avatar-3"
-                  value="avatar-3"
-                  name="avatar"
-                />
+                <input type="radio" id="avatar-3" value="avatar-3" name="avatar" />
                 <img src="../assets/avatar-3.jpg" />
               </div>
               <div class="profile-image">
-                <input
-                  type="radio"
-                  id="avatar-4"
-                  value="avatar-4"
-                  name="avatar"
-                />
+                <input type="radio" id="avatar-4" value="avatar-4" name="avatar" />
                 <img src="../assets/avatar-4.jpg" />
               </div>
+            <div class="error-message" id="profile-error"></div>
+
             </div>
           </div>
+          
+          <div class="error-message" id="profile-error"></div>
 
           <div class="form-group">
             <label class="label-from">Gender</label>
@@ -79,6 +63,8 @@
                 <input type="radio" id="female" value="female" name="gender" />
                 <label for="female" id="female">Female</label>
               </div>
+              <div class="error-message" id="gender-error"></div>
+
             </div>
           </div>
           <div class="form-group">
@@ -110,12 +96,16 @@
                 <option value="50,000">50,000</option>
                 <option value="30,000">30,000</option>
               </select>
+              <div class="error-message" id="salary-error"></div>
+
             </div>
           </div>
           <div class="form-group">
             <label class="label-from">Date</label>
             <div class="input-form">
               <input  type="date" id="date" class="input-form" />
+              <div class="error-message" id="date-error"></div>
+
             </div>
           </div>
           <div class="form-group">
